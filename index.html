@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Vishwa Vikas</a>
+        <nav>
+            <a href="#" class="nav-btn active" data-section="about">About</a>
+            <a href="#" class="nav-btn" data-section="projects">Projects</a>
+            <a href="#" class="nav-btn" data-section="resume">Resume</a>
+            <a href="#" class="nav-btn" data-section="contact">Contact Me</a>
+        </nav>
+    </header>
+    <main>
+        <!-- About Section -->
+        <section class="slide-section" id="about" style="display: block;">
+            <div class="About-container">
+                <div class="About-img"><img src="main.jpg" alt="Vishwa Vikas"></div>
+                <div class="About-content">
+                    <h1>Hi, It's <span>Vishwa Vikas</span></h1>
+                    
+                    <p>
+                        Highly motivated Full Stack Developer skilled in building secure, scalable web applications using Java, React, Node.js, and MongoDB. Experienced in developing RESTful APIs, modern UI/UX, and delivering projects in Agile teams. I enjoy collaborating with diverse teams to create impactful software that solves real-world problems.
+                    </p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/vishwa-vikas/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/VishwaVikas2006" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://x.com/VishwaVikas17" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://www.instagram.com/vishwa_vikas2006/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="#contact" class="btn" onclick="showSection('contact');return false;">Hire me</a>
+                </div>
+            </div>
+        </section>
+        <!-- Projects Section -->
+        <section class="slide-section" id="projects">
+            <div class="projects-content">
+                <h1>Projects</h1>
+                <ul class="project-list">
+                    <li>
+                        <strong><a href="https://windpad.onrender.com/" target="_blank" class="project-link">GlobalPad</a></strong> - Secure File & Note Sharing Platform<br>
+                        <span>Built a secure note-taking and file-sharing web application using Node.js, Express, and MongoDB Atlas. Enabled real-time note saving, multi-file uploads (PDF, Word, images), and session-based access without login. Integrated a modern, user-friendly UI for seamless collaboration.</span>
+                    </li>
+                    <li>
+                        <strong><a href="https://mini-linkedin-one.vercel.app/" target="_blank" class="project-link">mini-linkedin</a></strong> - Community Platform<br>
+                        <span>LinkedIn-style networking app with authentication, profile management, and public feeds, developed using Next.js, React, and MongoDB Atlas.</span>
+                    </li>
+                    <li>
+                        <strong><a href="https://unity-works-delta.vercel.app/" target="_blank" class="project-link">UnityWorks</a></strong><br>
+                        <span>A responsive React frontend website for an NGO platform UnityWorks featuring a Home page, Volunteer registration form, and About Us section. Built with Vite, React Router, and modern React best practices.</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- Resume Section -->
+        <section class="slide-section" id="resume">
+            <div class="resume-block">
+                <h1>Resume</h1>
+                <p>View my detailed resume below:</p>
+                <a href="VishwaVikas2006.pdf" target="_blank" class="btn">View Resume</a>
+                <!-- Replace 'YourResumeFile.pdf' with your actual resume file path -->
+                <div class="edu-cert">
+                    <h2>Education</h2>
+                    <p>
+                        Bachelor of Technology in Computer Science<br>
+                        Sphoorthy Engineering College, Hyderabad (Sep 2022 - 2026, CGPA: 7.0)<br>
+                        Intermediate (12th Grade), Percentage: 98% (Dec 2022)
+                    </p>
+                    <h2>Certifications & Awards</h2>
+                    <ul>
+                        <li>Alpha (DSA with Java) - Apna College</li>
+                        <li>Android Developer Virtual Internship - Google/AICTE/EduSkills</li>
+                        <li>Technology Job Simulation - Deloitte</li>
+                        <li>Machine Learning Algorithms - Simplilearn</li>
+                        <li>Introduction to AI - IBM SkillsBuild</li>
+                        <li>Java (Basic) - HackerRank</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Section -->
+        <section class="slide-section" id="contact">
+            <div class="contact-block">
+                <h1>Contact Me</h1>
+                <!-- Contact Form -->
+                <form class="contact-form" id="messageForm" autocomplete="off" action="https://formspree.io/f/xkgzeeqp" method="POST">
+                    <h2>Drop a Message</h2>
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="4" placeholder="Type your message here..." required></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                    <span id="form-status"></span>
+                </form>
+                <!-- Contact Details -->
+                <div class="contact-details">
+                    <p>Email: vishwavikas77@gmail.com</p>
+                    <p>Phone: 9618477219</p>
+                    <p>Location: Hyderabad</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        // Initialize EmailJS
+        (function() {
+            emailjs.init("YOUR_PUBLIC_KEY"); // You'll need to replace this with your EmailJS public key
+        })();
+
+        // Section switching logic
+        function showSection(sectionId) {
+            document.querySelectorAll('.slide-section').forEach(sec => sec.style.display = 'none');
+            document.getElementById(sectionId).style.display = 'block';
+            document.querySelectorAll('.nav-btn').forEach(btn => btn.classList.remove('active'));
+            document.querySelector('.nav-btn[data-section="' + sectionId + '"]').classList.add('active');
+            window.scrollTo(0, 0); // scroll to top when changing sections
+        }
+
+        // Add nav event listeners
+        document.querySelectorAll('.nav-btn').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                e.preventDefault();
+                showSection(this.dataset.section);
+            });
+        });
+
+        // Show About section first
+        showSection('about');
+
+        // Contact form submission with Formspree
+        document.getElementById('messageForm').addEventListener('submit', function (e) {
+            // Show loading message
+            document.getElementById('form-status').innerText = "Sending message...";
+            document.getElementById('form-status').style.color = "#b74b4b";
+            
+            // Let the form submit naturally to Formspree
+            // Formspree will handle the submission and redirect
+        });
+    </script>
+</body>
+</html>
