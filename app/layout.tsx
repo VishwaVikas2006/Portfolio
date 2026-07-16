@@ -29,11 +29,11 @@ export const metadata: Metadata = {
   keywords: siteConfig.keywords,
   authors: [
     {
-      name: 'Aditya Domle',
-      url: 'https://imaditya.vercel.app',
+      name: 'Vishwa Vikas Masuna',
+      url: 'https://your-portfolio-url.com',
     },
   ],
-  creator: 'Aditya Domle',
+  creator: 'Vishwa Vikas Masuna',
   openGraph: {
     type: 'website',
     locale: 'en_US',
@@ -46,7 +46,6 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: siteConfig.name,
     description: siteConfig.description,
-    creator: '@env_aditya',
   },
   icons: {
     icon: '/favicon.ico',
@@ -73,8 +72,8 @@ async function loadStats() {
   }
 }
 
-export default function RootLayout({ children }: RootLayoutProps) {
-  loadStats();
+export default async function RootLayout({ children }: RootLayoutProps) {
+  await loadStats();
   return (
     <>
       <html lang="en" suppressHydrationWarning>

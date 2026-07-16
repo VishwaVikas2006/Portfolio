@@ -14,16 +14,17 @@ const IntroductionPage = async () => {
   return (
     <>
       <PageHeader>
-        <PageHeaderHeading>Aditya Domle</PageHeaderHeading>
+        <PageHeaderHeading>Vishwa Vikas Masuna</PageHeaderHeading>
         <PageHeaderHeading className="mt-2 text-muted-foreground">
-          A coder by day, problem-solver by night!
+          Full-stack & AI-powered application developer!
         </PageHeaderHeading>
         <PageHeaderDescription>
-          I am a dedicated Software Engineer specializing in full-stack
-          application development. I enjoy crafting responsive web solutions
-          using modern technologies like Next.js, React, Tailwind CSS, Node.js,
-          Express, and MongoDB, while also applying DevOps practices, continuously
-          aiming to deliver high-quality, comprehensive, user-centric software solutions.
+          I am a Computer Science graduate and developer specializing in
+          full-stack web development and AI-powered applications with React,
+          Node.js, Express.js, and MongoDB Atlas. I enjoy building scalable web
+          applications, REST APIs, and LLM-driven tools using LangGraph and the
+          Gemini, Cohere, OpenRouter, and Mistral APIs, with strong foundations
+          in Java, Python, OOP, and Data Structures & Algorithms.
         </PageHeaderDescription>
         <PageActions>
           <Button asChild size="sm" className="rounded-md">

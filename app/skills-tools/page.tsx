@@ -17,10 +17,11 @@ const SkillsToolsPage = () => {
           Learned by coding all night and debugging all day!
         </PageHeaderHeading>
         <PageHeaderDescription>
-          As a full-stack Software Engineer, I specialize in building scalable
-          web applications using modern technologies such as Next.js, React, and
-          Tailwind CSS. I'm also expanding my expertise into DevOps and cloud
-          practices to create efficient, maintainable, robust web solutions.
+          As a full-stack developer, I specialize in building scalable web
+          applications using modern technologies such as React, Node.js, and
+          MongoDB. I'm also expanding into AI-powered application development with
+          LangGraph and LLM providers like Gemini, Cohere, OpenRouter, and
+          Mistral to create intelligent, maintainable web solutions.
         </PageHeaderDescription>
       </PageHeader>
 

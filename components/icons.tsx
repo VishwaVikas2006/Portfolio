@@ -1,3 +1,6 @@
+import { SiPython, SiVite, SiPostgresql, SiRender, SiGooglegemini, SiLangchain } from 'react-icons/si';
+import { Coffee, Webhook, Brain, Binary, Boxes, Database, KeyRound, Sparkles } from 'lucide-react';
+
 type IconProps = React.HTMLAttributes<SVGElement>;
 
 export const Icons = {
@@ -217,4 +220,20 @@ export const Icons = {
       />
     </svg>
   ),
+  java: (props: IconProps) => <Coffee {...(props as any)} />,
+  python: (props: IconProps) => <SiPython {...(props as any)} />,
+  vite: (props: IconProps) => <SiVite {...(props as any)} />,
+  postgresql: (props: IconProps) => <SiPostgresql {...(props as any)} />,
+  render: (props: IconProps) => <SiRender {...(props as any)} />,
+  gemini: (props: IconProps) => <SiGooglegemini {...(props as any)} />,
+  langgraph: (props: IconProps) => <SiLangchain {...(props as any)} />,
+  rest: (props: IconProps) => <Webhook {...(props as any)} />,
+  prompt: (props: IconProps) => <Brain {...(props as any)} />,
+  dsa: (props: IconProps) => <Binary {...(props as any)} />,
+  oop: (props: IconProps) => <Boxes {...(props as any)} />,
+  dbms: (props: IconProps) => <Database {...(props as any)} />,
+  jwt: (props: IconProps) => <KeyRound {...(props as any)} />,
+  mistral: (props: IconProps) => <Sparkles {...(props as any)} />,
+  cohere: (props: IconProps) => <Sparkles {...(props as any)} />,
+  openrouter: (props: IconProps) => <Sparkles {...(props as any)} />,
 };

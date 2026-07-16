@@ -2,19 +2,16 @@ import { TimelineViewerData } from '@/types/TimelineViewer.types';
 
 export const experiences: TimelineViewerData[] = [
   {
-    title: 'Open Source Developer · Hacktoberfest',
-    date: 'Oct. 2025 - Present',
-    description: `Currently contributing as an Open Source Developer at Hacktoberfest, working on various web development projects and collaborating with the global developer community.`,
+    title:
+      'Software Engineer Intern · Real Variable Digital Asset Services Pvt. Ltd.',
+    date: 'Jun. 2026 – Present',
+    description: `Developed backend modules and REST APIs using Node.js and Express.js for enterprise applications. Designed and optimized MongoDB collections, queries, and data models to improve backend performance. Collaborated with the engineering team to build scalable backend services and database-driven features.`,
     latest: true,
   },
   {
-    title: 'Trainee · Sheriyans Coding School',
-    date: 'May 2025 - Oct. 2025',
-    description: `Trainee at Sheriyans Coding School, learned full-stack technologies and DevOps practices. Participated in hackathons and collaborated on projects with the developer community.`,
+    title: 'Full Stack Developer Intern · T-Home Fintech',
+    date: 'May 2026 – Present',
+    description: `Took ownership of the frontend development for the company's second web application, resolving major UI bugs and improving overall usability. Integrated the frontend with existing backend REST APIs, delivering production-ready features while maintaining a scalable component-based architecture. Served as the primary contributor and repository maintainer, managing code quality, feature development, and collaborative Git workflows.`,
   },
-  {
-    title: 'Project Admin · GSSoC25 (GirlScript Summer of Code)',
-    date: 'Aug. 2025 - Sept. 2025',
-    description: `As a Project Admin, I reviewed code, merged pull requests, and communicated with developers, ensuring smooth project workflow and collaboration during GSSoC25.`,
-  },
+  
 ];

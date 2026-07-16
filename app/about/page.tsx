@@ -9,27 +9,32 @@ const AboutMePage = () => {
   return (
     <>
       <PageHeader>
-        <PageHeaderHeading>About Aditya</PageHeaderHeading>
+        <PageHeaderHeading>About Vishwa</PageHeaderHeading>
         <PageHeaderHeading className="mt-2 text-muted-foreground">
           More than just a title—let’s dive deeper!
         </PageHeaderHeading>
         <PageHeaderDescription>
-          I am a passionate Software Engineer with a knack for building
-          full-stack web applications using modern technologies like Next.js and
-          Tailwind CSS. My journey in tech began with a curiosity for solving
-          real-world problems through innovative solutions, which evolved into a
-          love for crafting user-centric digital experiences.
+          I'm a passionate Computer Science graduate with hands-on experience in
+          full-stack web development and AI-powered application development. I
+          build scalable web applications and REST APIs using React, Node.js,
+          Express.js, and MongoDB Atlas, and I care about clean, responsive user
+          interfaces.
         </PageHeaderDescription>
 
         <PageHeaderDescription>
-          With a strong foundation in JavaScript frameworks, I focus on creating scalable, efficient, and visually appealing applications. Currently, I am diving deeper into backend development with Node.js and Express to expand my skill set and deliver powerful, server-side solutions.
+          With a strong foundation in Java, Python, Object-Oriented Programming,
+          and Data Structures & Algorithms, I focus on writing efficient,
+          maintainable code. I'm currently expanding my skills through internships
+          at Real Variable Digital Asset Services and T-Home Fintech, and by
+          building LLM-driven tools with LangGraph and the Gemini, Cohere,
+          OpenRouter, and Mistral APIs.
         </PageHeaderDescription>
 
         <PageHeaderDescription>
-          Beyond coding, I thrive in collaborative environments and enjoy
-          tackling challenging problems with creative solutions. I aim to
-          contribute to impactful projects that make a difference in users'
-          lives.
+          Beyond coding, I enjoy collaborating with teams, learning new
+          technologies, and contributing to open-source projects to grow and give
+          back to the developer community. I've solved 70+ LeetCode and 50+
+          GeeksforGeeks problems and made 300+ GitHub contributions.
         </PageHeaderDescription>
       </PageHeader>
 

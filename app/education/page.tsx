@@ -17,15 +17,15 @@ const EducationPage = () => {
         </PageHeaderHeading>
         <PageHeaderDescription>
           Education has always been the cornerstone of my journey into the tech
-          world. Pursuing a Bachelor's in Computer Application (BCA) at GH Raisoni
-          College of Engineering and Management, Nagpur, has provided me a
-          strong foundation in computer science and software development.
+          world. Pursuing a B.Tech in Computer Science Engineering at Sphoorthy
+          Engineering College has provided me a strong foundation in computer
+          science, programming, and software development.
         </PageHeaderDescription>
 
         <PageHeaderDescription>
-          My academic journey has been complemented by hands-on projects and
-          coursework, enabling me to build practical skills and a deep
-          understanding of modern technological solutions.
+          My academic journey has been complemented by hands-on projects,
+          internships, and coursework, enabling me to build practical skills and
+          a deep understanding of modern web technologies.
         </PageHeaderDescription>
       </PageHeader>
 
@@ -33,9 +33,9 @@ const EducationPage = () => {
 
       <Pager
         prevHref="/experience"
-        nextHref="/contact"
+        nextHref="/certifications"
         prevTitle="Experience"
-        nextTitle="Contact"
+        nextTitle="Certifications"
       />
     </>
   );

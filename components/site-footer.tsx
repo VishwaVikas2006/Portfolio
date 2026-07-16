@@ -33,16 +33,25 @@ export async function SiteFooter() {
               rel="noreferrer"
               className="font-medium transition-colors text-primary hover:text-primary/80"
             >
-              Aditya Domle
+              Vishwa Vikas
             </Link>{" "}
-            · Source code available on{" "}
+            · Connect on{" "}
             <Link
-              href="https://topmate.io/aditya_domle/1773422"
+              href={siteConfig.links.linkedin}
               target="_blank"
               rel="noreferrer"
               className="font-medium transition-colors text-primary hover:text-primary/80"
             >
-              Topmate
+              LinkedIn
+            </Link>{" "}
+            ·{" "}
+            <Link
+              href={siteConfig.links.leetcode}
+              target="_blank"
+              rel="noreferrer"
+              className="font-medium transition-colors text-primary hover:text-primary/80"
+            >
+              LeetCode
             </Link>
           </div>
         </div>
